@@ -1,0 +1,299 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #00062a,
+    #021b44 100%
+    );
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  align-items: center;
+  box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.3);
+  display: flex;
+  flex-basis: 110px;
+  justify-content: center;
+}
+
+
+
+ul {
+  display: flex;
+  font-size: 0.9em;
+  flex-direction: row;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  border: 1px solid #000;
+  display: flex;
+  flex: 7;
+  overflow: auto;
+  
+}
+
+.box1 {
+  border-right: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  padding: 55px;
+  width: 30%;
+}                      
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px; 
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-top: 25%;
+  max-width: 400px;
+  width: 100%;
+}
+
+
+
+.header {
+  background-color: #ffcc00;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+
+h1 {
+  color: #fff;
+
+}
+.square {
+  color: #228B22;
+  flex-direction: column;
+  list-style-type: square;
+}
+
+.box2 {
+ padding: 55px;
+  width: 70%;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 2px #fff, 0 0 25px #fff, 0 0 5px #fff;
+}
+
+.button {
+  border-radius: 30px;
+  border: 0;
+  background: #00FFFF;
+  color: #000F62;
+  padding: 10px 25px;
+  font-size: 0.9em;
+  font-weight: 15px;
+  margin-top: 14px;
+ text-transform: capitalize;
+ text-decoration: none;
+}
+
+.circle {
+  background-color: #991770;
+  border-radius: 50%;
+  height: 50px;
+  margin: 20px;
+  transition: all 0.3s ease-in-out;
+  width: 50px;
+}
+
+.circle:hover {
+  transform: scale(1.5);
+}
+
+p {
+  color: #336699;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.name input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 25px;
+  font-size: 16px;
+  padding: 10px;
+  width: 300px;
+}
+
+.blockquote {
+  border-left: 5px solid #FF4500;
+  color: #fff;
+  padding: 15px;
+}
+
+.my-link:hover {
+  color: #991770;
+}
+
+
+
+table {
+  margin-top: 25px;
+}
+
+td {
+  color: #000F62;   
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #F5F5F5;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  background-color: #4CAF50;
+  border-radius: 10px;
+  height: 100%;
+  width: 70%; 
+}
+
+hr {
+  border: 0;
+  height: 20px;
+  width: 300px;
+  background: linear-gradient(
+    135deg,
+    #ff5733,
+    #fcc300 100%
+    )
+  }
+
+.tooltip-container {
+  display: inline-block;
+  position: relative;
+  margin: 100px;
+}
+
+.tooltip-trigger {
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px dotted #fff;
+}
+
+.tooltip {
+  background-color: #000;
+  border-radius: 5px;
+  bottom: 125%;
+  color: #fff;
+  left: 50%;
+  opacity: 0;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, visibility 0.3s;
+  width: 150px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #B0E0E6;
+}
+
+footer {
+  border: 1px solid #000;
+  flex-basis: 110px;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8em;
+  
+}
+.overlay {
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
