@@ -219,4 +219,4 @@ for (let bb = 0; name20[bb] !== undefined; bb++) {
   // Your code here
   length20++;
 }
-console.log("[Question #20]: ", length20); // Answer should be:
+console.log("[Question #20]: ", length20); // Answer should be: 
