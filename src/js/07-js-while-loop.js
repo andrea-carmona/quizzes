@@ -150,7 +150,7 @@ console.log("[Question #9]: ", gcd);
  * Calculate the sum of all odd numbers between 1 and 50 using a while loop.
  */
 let odd = 1; // comienzo con el primer numero impar, 1
-let sum1 = 0; // inicio la suma con la variable  0
+let sum1 = 0; // inicio la suma con la variable
 
 while (odd <= 50) {
   sum1 += odd; 
