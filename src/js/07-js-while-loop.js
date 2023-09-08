@@ -107,7 +107,7 @@ let number4 = 5;
 let factorial = 1; 
 
 while (number4 > 0) {
-  factorial *= number; 
+  factorial *= number4; 
   number4--;
 }
 console.log("[Question #7]: ", factorial);
