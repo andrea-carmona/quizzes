@@ -157,4 +157,4 @@ while (odd <= 50) {
   odd += 2; 
 }
 
-console.log("[Question #10]: ", sum1 );
+console.log("[Question #10]: ", sum1 ); 
